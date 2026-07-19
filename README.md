@@ -15,21 +15,6 @@ The project focuses on:
 - CI/CD readiness
 - Production deployment practices
 
-## Architecture
-
-Application Components
-
-- Public Application Load Balancer
-- Amazon EKS Cluster
-- Frontend Deployment
-- Backend API Deployment
-- Database Layer
-- Private Subnets
-- NAT Gateway
-- Internet Gateway
-- Route Tables
-- Security Groups
-
 ## Technologies
 
 | Category | Technology |
@@ -54,17 +39,6 @@ docs/
 images/
 scripts/
 
-## Deployment Workflow
-
-1. Provision networking
-2. Deploy EKS Cluster
-3. Configure IAM Roles
-4. Build Docker Images
-5. Push images to Amazon ECR
-6. Deploy Kubernetes manifests
-7. Validate workloads
-8. Perform application testing
-
 ## Current Progress
 
 - [x] Repository initialized
@@ -84,20 +58,5 @@ scripts/
 - [ ] Monitoring
 - [ ] Documentation
 
-## Future Improvements
 
-- GitHub Actions
-- ArgoCD
-- Helm Charts
-- Autoscaling
-- Prometheus
-- Grafana
-- Blue/Green Deployments
 
-## Lessons Learned
-
-- Difference between NodePort and LoadBalancer
-- Why private subnets require NAT Gateway
-- IAM Roles for Service Accounts
-- Kubernetes Networking
-- Terraform State Management
